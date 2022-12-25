@@ -1,0 +1,228 @@
+
+/*motion*/
+
+.main h2{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.main.true h2{
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 800ms 0ms, opacity 800ms 200ms;
+}
+
+.main h3,
+.main .name{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.main.true h3{
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 800ms 300ms, opacity 800ms 300ms;
+}
+
+.main.true .name{
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 800ms 500ms, opacity 800ms 500ms;
+}
+
+
+.main .blue-images{
+    opacity: 0;
+}
+.main.true .blue-images{
+    opacity: 1;
+    transition: opacity 600ms 800ms;
+}
+
+.about .me-images{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.about .me-images.true{
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 600ms 100ms, opacity 600ms 100ms;
+}
+
+.about .me-images::after{
+    opacity: 0;
+    transform: translate(-20px, -20px);
+}
+.about .me-images.true::after{
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: transform 600ms 300ms, opacity 600ms 300ms;
+}
+
+.about .self{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.about .self.true{
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 600ms 600ms, opacity 600ms 600ms;
+}
+
+.information .information-box{
+    opacity: 0;
+}
+.information .information-box.true{
+    opacity: 1;
+}
+.information .information-box:nth-of-type(1).true{
+    transition: opacity 600ms 0ms;
+}
+.information .information-box:nth-of-type(2).true{
+    transition: opacity 600ms 300ms;
+}
+.information .information-box:nth-of-type(3).true{
+    transition: opacity 600ms 600ms;
+}
+
+.portfolio .portfolio-list{
+    opacity: 0;
+}
+.portfolio .portfolio-list.true{
+    opacity: 1;
+    transition: opacity 600ms 0ms;
+}
+
+.portfolio .portfolio-list li img{
+    transform: scale(1);
+    transition: transform 400ms 0ms;
+}
+.portfolio .portfolio-list li:hover img{
+    transform: scale(1.1);
+    transition: transform 400ms 0ms;
+}
+
+
+.portfolio .portfolio-list .project-detail{
+    opacity: 0;
+    transition: all ease-in-out 500ms 0ms;
+
+}
+.portfolio .portfolio-list li:hover .project-detail{
+    opacity: 1;
+    transition: opacity 400ms 0ms;
+}
+
+.portfolio .portfolio-list .project-title{
+    opacity: 0;
+    transform: translateY(20px);
+}
+.portfolio .portfolio-list li:hover .project-title{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 200ms 100ms;
+}
+
+.portfolio .arrow{
+    opacity: 0;
+    transition: all ease-in-out 200ms 0ms;
+}
+.portfolio .portfolio-list li:hover .arrow{
+    width: 100%;
+    opacity: 1;
+    transition: all 200ms 200ms;
+}
+
+.project-body{
+    opacity: 0;
+    transform: translateY(20px);
+}
+.project-body.true{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 600ms 0ms, opacity 600ms 0ms;
+}
+
+.project-img{
+    opacity: 0;
+    transform: translateY(20px);
+}
+.project-img.true{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 600ms 0ms, opacity 600ms 0ms;
+}
+
+.view-btn a{
+    transition: color 300ms 0ms, background-color 300ms 0ms;
+}
+.view-btn a:hover{
+    color:#fff;
+    background-color: #000;
+    transition: color 300ms 0ms, background-color 300ms 0ms;
+}
+
+@media (max-width: 768px){
+
+    .about .self{
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+    .about .self.true{
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: transform 600ms 0ms, opacity 600ms 0ms;
+    }
+
+    .information .information-box:nth-of-type(1),
+    .information .information-box:nth-of-type(2),
+    .information .information-box:nth-of-type(3){
+        transform: translateY(20px);
+    }
+    .information .information-box:nth-of-type(1).true,
+    .information .information-box:nth-of-type(2).true,
+    .information .information-box:nth-of-type(3).true{
+        transform: translateY(0);
+        transition: transform 600ms 0ms, opacity 600ms 0ms;
+    }
+
+    .portfolio .portfolio-list li img{
+        transform: none;
+        transition:none;
+    }
+    .portfolio .portfolio-list li:hover img{
+        transform: none;
+        transition: none;
+    }
+
+    .portfolio .portfolio-list .project-detail{
+        opacity: 1;
+        transition: none;
+    
+    }
+    .portfolio .portfolio-list li:hover .project-detail{
+        opacity: 1;
+        transition: none;
+    }
+    
+    .portfolio .portfolio-list .project-title{
+        opacity: 1;
+        transform: none;
+    }
+    .portfolio .portfolio-list li:hover .project-title{
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    
+    .portfolio .arrow{
+        display: none;
+    }
+    .portfolio .portfolio-list li:hover .arrow{
+        display: none;
+    }
+    
+}
+
+
+
+

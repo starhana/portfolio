@@ -1,0 +1,311 @@
+
+
+/*project-main */
+.project-main {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-main .inner{
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.project-main .project-bg{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.26%;
+    overflow: hidden;
+    animation: scale 600ms forwards;
+}
+
+.project-main .project-bg img{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+@keyframes scale {
+    0% {
+      transform:scale(1.2);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.project-main::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.project-main .txt{
+    position: absolute;
+    top: 0;
+    padding: 0 20%;
+    height: 100%;
+}
+
+.project-main .project-main-title{
+    position: relative;
+    font-size: 64rem;
+    font-weight: 700;
+    line-height: 1.32;
+    letter-spacing: 0.15em;
+    color: #fff;
+    z-index: 1;
+}
+
+/*project-body*/
+
+.project-body .project-content{
+    padding:0 100rem;
+}
+
+.project-body .project-content h2{
+    font-size: 35rem;
+    font-weight: bold;
+    line-height: 1.32;
+}
+
+.project-body .project-content .project-summary{
+    margin-top: 40rem;
+}
+
+.project-body .project-content .project-summary li{
+    position: relative;
+    width: calc((100% - 100rem) / 3);
+    padding-left:15rem;
+    font-size: 18rem;
+    font-weight: 500;
+}
+
+.project-body .project-content .project-summary li::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width:3rem;
+    height: 100%;
+    background-color: #000;
+}
+
+.project-body .project-content .project-summary li + li{
+    margin-left: 50rem;
+}
+
+.project-body .project-content .project-summary p{
+    margin-top: 10rem ;
+    font-size: 17rem;
+    line-height: 1.6;
+}
+
+.project-body .project-content .desc{
+    margin-top: 30rem;
+    padding-top: 10rem;
+    padding-right: 100rem;
+    font-size: 16rem;
+
+}
+.project-body .project-content .desc p + p{
+    margin-top: 15rem;
+}
+
+.project-body .project-content .desc p + .notice{
+    margin-top: 10rem;
+}
+
+.project-body .project-content .notice p{
+    font-size: 14rem;
+    color: #888;
+}
+
+.project-body .project-content .notice .mark{
+    vertical-align: middle;
+}
+
+.project-body .project-content .view-btn{
+    margin-top: 40rem;
+    font-size: 16rem;
+}
+
+.project-body .project-content .view-btn a{
+    display: inline-block;
+    padding: 10rem 70rem;
+    border: solid 2rem #000;
+    border-radius: 5rem;
+}
+
+.project-img{
+    margin-top: 180rem;
+}
+
+@media (max-width: 1000px){
+
+    .project-body .project-content .project-summary li::before{
+        width: 2px;
+    }
+
+    .project-body .project-content .view-btn a{
+        border-width: 2px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+     
+  
+    /*project-main */
+    .project-main {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .project-main .inner{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .project-main .project-bg{
+        position: relative;
+        width: 100%;
+        height: 900rem;
+        max-height: 900px;
+        animation: scale 600ms forwards;
+    }
+
+    .project-main .project-bg img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-main::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* ^위에는 나중에 수정*/
+
+    .project-main .txt{
+        padding: 0 60rem;
+    }
+
+    .project-main .project-main-title{
+        font-size: 60rem;
+        line-height: 1.33;
+        letter-spacing: -0.02em;
+    }
+
+    /*project-body*/
+
+    .project-body .project-content{
+        padding:0;
+    }
+
+    .project-body .project-content h2{
+        font-size: 45rem;
+        line-height: 1.33;
+    }
+
+    .project-body .project-content .project-summary{
+        margin-top: 50rem;
+    }
+
+    .project-body .project-content .project-summary li{
+        width: 100%;
+        padding-left:15rem;
+        font-size: 30rem;
+    }
+
+    .project-body .project-content .project-summary li strong{
+        font-weight: bold;
+    }
+
+    .project-body .project-content .project-summary li::before{
+        width: 3rem;
+        height: 93%;
+    }
+
+    .project-body .project-content .project-summary li + li{
+        margin-left: 0;
+        margin-top: 30rem;
+    }
+
+    .project-body .project-content .project-summary p{
+        margin-top: 10rem ;
+        font-size: 28rem;
+        line-height: 1.66;
+    }
+
+    .project-body .project-content .desc{
+        margin-top: 50rem;
+        padding: 0;
+        font-size: 28rem;
+
+    }
+    .project-body .project-content .desc p + p{
+        margin-top: 20rem;
+    }
+
+    .project-body .project-content .desc p + .notice{
+        margin-top: 15rem;
+    }
+
+    .project-body .project-content .notice p{
+        font-size: 22rem;
+    }
+
+    .project-body .project-content .view-btn{
+        margin-top: 50rem;
+        font-size: 28rem;
+    }
+
+    .project-body .project-content .view-btn a{
+        display: inline-block;
+        padding: 10rem 70rem;
+        border-width: 2px;
+        border-radius: 5rem;
+    }
+
+    .project-img{
+        margin-top: 200rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
