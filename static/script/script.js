@@ -63,6 +63,12 @@ window.addEventListener('DOMContentLoaded', function()
                 main_img_box.style.left = `${currentX}px`;
                 main_img_box.style.top = `${currentY}px`;
             }
+
+            function mouseoutEvent(){
+                mouseX = 0;
+                mouseY = 0;
+            }
+            main.addEventListener('mouseout',mouseoutEvent);
         }
         
     }

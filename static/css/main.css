@@ -127,6 +127,9 @@ section:last-of-type{
 }
 
 /*about*/
+.about .half > div{
+    vertical-align: middle;
+}
 .about .me-images{
     position: relative;
     margin-bottom: 55rem;
@@ -152,8 +155,27 @@ section:last-of-type{
     vertical-align: top;
 }
 .about .self div + div{
-    margin-top: 20px;
+    margin-top: 25rem;
 }
+
+.about .self .mark p{
+    position: relative;
+    padding-left: 32rem;
+}
+
+.about .self .mark p + p{
+    margin-top: 15rem;
+}
+
+.about .self .mark p .sign{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 
 /*information*/
 .information{
@@ -182,6 +204,10 @@ section:last-of-type{
 .information .information-box strong{
     font-size: 18rem;
     font-weight: 500;
+}
+
+.information .information-box .desc{
+    margin-top: 20rem;
 }
 
 .information .information-list li{
@@ -402,9 +428,16 @@ section:last-of-type{
     }
 
     .about .self div + div{
-        margin-top: 20px;
+        margin-top: 30rem;
     }
 
+    .about .self .mark p{
+        padding-left: 45rem;
+    }
+
+    .about .self .mark p + p {
+        margin-top: 20rem;
+    }
     /*information*/
     .information{
         padding: 150rem 0;
@@ -489,15 +522,8 @@ section:last-of-type{
 
     /*footer*/
     .footer p{
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 500;
     }
-
-
-
-
-
-
-
 
 }
